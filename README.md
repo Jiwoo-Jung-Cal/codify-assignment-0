@@ -1,5 +1,7 @@
 # Assignment 0
 
+Changes from conflict2.
+
 Jiwoo Jung — Codify 61D
 
 **A byte contains eight bits.**
