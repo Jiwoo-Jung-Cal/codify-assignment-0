@@ -1,0 +1,79 @@
+    1  echo 'Hello Bash!'
+    2  pwd
+    3  cd ~/Documents
+    4  mkdir -p 61D
+    5  cd 61D
+    6  mkdir bash-assignment
+    7  cd bash-assignment
+    8  touch README.md
+    9  touch meaning-of-life.txt
+   10  ls
+   11  mv meaning-of-life.txt history.txt
+   12  ls
+   13  code .
+   14  [200~git init -b main
+   15  git config user.name "Jiwoo Jung"
+   16  git config user.email "jiwoojung@berkeley.edu"
+   17  git status
+   18  git add .
+   19  git status
+   20  git commit -m "Initial commit"
+   21  git checkout -b new-feature
+   22  git branch
+   23  echo 'This is my new feature.' > feature.txt
+   24  git add feature.txt
+   25  git commit -m "Add new feature"
+   26  git checkout main
+   27  ls
+   28  git init -b main
+   29  git config user.name "Jiwoo Jung"
+   30  git config user.email "jiwoojung@berkeley.edu"
+   31  git status
+   32  git add README.md history.txt
+   33  git status
+   34  git commit -m "Initial commit"
+   35  git config user.name "Jiwoo Jung"
+   36  git config user.email "jiwoojung@berkeley.edu"
+   37  git status
+   38  git add README.md history.txt
+   39  git status
+   40  git commit -m "Initial commit"
+   41  git checkout -b new-feature
+   42  git branch
+   43  git add feature.txt
+   44  git commit -m "Add new feature"
+   45  git checkout main
+   46  ls
+   47  git merge new-feature
+   48  git branch -d new-feature
+   49  git log --oneline --graph --all
+   50  git remote add origin https://github.com/Jiwoo-Jung-Cal/codify-assignment-0.git
+   51  git push -u origin main
+   52  git checkout -b conflict1
+   53  echo 'Changes from conflict1.' > feature.txt
+   54  git add feature.txt README.md
+   55  git commit -m "Add conflict1 changes"
+   56  git push -u origin conflict1
+   57  git checkout main
+   58  git checkout -b conflict2
+   59  echo 'Changes from conflict2.' > feature.txt
+   60  git add feature.txt README.md
+   61  git commit -m "Add conflict2 changes"
+   62  git push -u origin conflict2
+   63  git checkout main
+   64  git pull origin main
+   65  git branch -d conflict1
+   66  git checkout main
+   67  git pull origin main
+   68  git branch -d conflict2
+   69  git log --oneline --graph --all
+   70  printf '%s\n' 'secrets/' 'no-commit.txt' > .gitignore
+   71  git add .gitignore
+   72  git commit -m "Add gitignore"
+   73  touch no-commit.txt
+   74  mkdir -p secrets
+   75  echo 'Local example file.' > secrets/example.txt
+   76  git status
+   77  git check-ignore no-commit.txt secrets/example.txt
+   78  git push origin main
+   79  history | tail -n 200 >> history.txt
