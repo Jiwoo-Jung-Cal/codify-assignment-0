@@ -1,1 +1,2 @@
+Changes from conflict1.
 Changes from conflict2.

@@ -1,3 +1,5 @@
+Changes from conflict1.
+
 # Assignment 0
 
 Changes from conflict2.
